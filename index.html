@@ -39,12 +39,12 @@
             </div>
             <div class="col-md-9 form-group has-button">
                 <label class="control-label" for="buscar">Ingresa</label>
-                <!-- <input ng-model="buscarInput" type="text" class="form-control" id="buscar" ng-change="buscarFunc()" disabled="disabled" -->
-                <input ng-model="buscarInput" type="text" class="form-control" id="buscar" disabled="disabled"
-                    placeholder="Código o Descripcion" value="">
-                <button class="btn" ng-click="buscarFunc()">
+                <input ng-model="buscarInput" type="text" class="form-control" id="buscar" ng-change="buscarFunc()" disabled="disabled" placeholder="Código o Descripcion" value="">
+                <!-- <input ng-model="buscarInput" type="text" class="form-control" id="buscar" disabled="disabled" -->
+
+                <!-- <button class="btn" ng-click="buscarFunc()">
                     <span class="lupa glyphicon glyphicon-search"></span>
-                </button>
+                </button> -->
             </div>
         </div>
 
@@ -96,13 +96,12 @@
     // const apiURL = "https://bypasscors.herokuapp.com/api/?url="+encodeURIComponent('http://cdn2.buenosaires.gob.ar/desarrollo/buenos-aires/apra/codigo-urbanistico.json');
     const apiURL = 'apra.json';
 
-    $http.get(apiURL)
-      .then(function (response) {
+    $http.get(apiURL).then(function (response) {
         document.getElementById('buscar').removeAttribute('disabled');
 
         $scope.list = response.data;
+        debugger;
         angular.forEach($scope.list, function (value, key) {
-        //   console.log(value["rubro-historico"])
           value.rubrohistorico = value["rubro-historico"]
         });
       }).catch(e => { console.log(e); });
@@ -117,7 +116,9 @@
       let buscarInput = $scope.buscarInput.toLowerCase();
 
       angular.forEach($scope.list, function (value, key) {
-        debugger;
+
+        // if( value['cur-historico'] === '202.019' ) debugger;
+
         let resultadoValido = false;
         if ($scope.tipoCUR === tipoHistorico.value) {
           if (value.rubrohistorico.toLowerCase().includes(buscarInput) ||
