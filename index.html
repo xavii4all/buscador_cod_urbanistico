@@ -1,181 +1,1286 @@
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('html') -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--group-context--node-11434.tpl.php
+   * page--group-context--node.tpl.php
+   * page--group-context--group-104.tpl.php
+   * page--group-context.tpl.php
+   * html--node--102475.tpl.php
+   * html--node--%.tpl.php
+   * html--node.tpl.php
+   x html.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/html.tpl.php' -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="theme-color" content="#999999">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
-             
-        <title>APRA | Nuevo Código Urbanístico</title>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-                                                                  
-        <!-- Bootstrap CSS y Bastrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="css/bastrap.css">
-       
-        <!-- Acá va tu hoja de estilos -->
-        <link type="text/css" rel="stylesheet" href="css/buenosaires.css">
-        <link type="text/css" rel="stylesheet" href="css/global.css">
-        <!-- <link type="text/css" rel="stylesheet" href="css/fixes-v3.css"> -->
-    
-        <!-- Archivo JS para convertir a JSon un excel -->
-        
-    
-</head>
-<body>
-    
+<!--[if lt IE 7]><html lang="es" dir="ltr"  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="es" dir="ltr"  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="es" dir="ltr"  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html lang="es" dir="ltr"  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="es" dir="ltr"  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
 
-<div ng-app="myApp" ng-controller="myCtrl">
-    <div class="container apra">
-        <div class="row  mt-3">
-            <div class="col-md-3 form-group has-button">
-                <label class="control-label" for="inputSuccess2">Tipo de Busqueda</label>
-                <select ng-model="tipoCUR" id="inputSuccess2" class="form-control chosen-select" data-placeholder="Elegí una opción" ng-change="hayResultados = false; buscarInput = '';">
-                    <option ng-repeat="x in tipoCURoptions" value="{{x.value}}">{{x.name}}</option>
-                </select>
-            </div>
-            <div class="col-md-9 form-group has-button">
-                <label class="control-label" for="buscar">Ingresa</label>
-                <input ng-model="buscarInput" type="text" class="form-control" id="buscar" ng-change="buscarFunc()" disabled="disabled" placeholder="Código o Descripcion" value="">
-                <!-- <input ng-model="buscarInput" type="text" class="form-control" id="buscar" disabled="disabled" -->
-
-                <!-- <button class="btn" ng-click="buscarFunc()">
-                    <span class="lupa glyphicon glyphicon-search"></span>
-                </button> -->
-            </div>
-        </div>
-
-        <div ng-show="hayResultados" class="resultados">
-          <div class="thumbnail" ng-show="curNuevoUnico">
-              <h3 class="alert alert-info"> Nuevo CUR </h3>
-              <div class="caption">
-                  <h3>{{curNuevo["cur-nuevo"]}} / {{curNuevo["rubro-viejo"]}}</h3>
-              </div>
-          </div>
-
-          <div class="mt-4 table-responsive">
-          <!-- <div class="mt-4 table-responsive" ng-class="{ 'visible': hayResultados }"> -->
-              <table class="table table-striped">
-                  <thead>
-                      <tr class="bg-primary">
-                          <th class="text-center" scope="col"><strong>Código</strong></th>
-                          <th class="text-center" scope="col"><strong>Rubro</strong></th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr ng-repeat="x in listResult ">
-                          <th class="text-center" scope="row"><strong>{{x["cur-historico"]}}</strong></th>
-                          <td>{{x["rubro-historico"]}}</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-        </div>
-        
-    </div>
-</div>
-</body>
-</html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-<script>
-  // var app = angular.module('myApp', ['ngAnimate']);
-  var app = angular.module('myApp', []);
-  app.controller('myCtrl', function ($scope, $http) {
-    $scope.hayResultados = false;
-    $scope.listResult = [];
-    $scope.tipoCURoptions = [];
-    $scope.curNuevo = {};
-    tipoNuevo = {};
-    tipoNuevo.name = "Por Nuevo CUR";
-    tipoNuevo.value = "cur-nuevo";
-    tipoHistorico = {};
-    tipoHistorico.name = "Por CUR histórico";
-    tipoHistorico.value = "rubro-historico";
-    $scope.tipoCURoptions = [tipoNuevo, tipoHistorico];
-    $scope.tipoCUR = tipoHistorico.value;
-
-    // const apiURL = "https://bypasscors.herokuapp.com/api/?url="+encodeURIComponent('http://cdn2.buenosaires.gob.ar/desarrollo/buenos-aires/apra/codigo-urbanistico.json');
-    const apiURL = 'https://cdn2.buenosaires.gob.ar/desarrollo/buenos-aires/apra/codigo-urbanistico.json';
-    // const apiURL = 'apra.json';
-
-    $http.get(apiURL).then(function (response) {
-        document.getElementById('buscar').removeAttribute('disabled');
-
-        $scope.list = response.data;
-        angular.forEach($scope.list, function (value, key) {
-          value.rubrohistorico = value["rubro-historico"]
-        });
-      }).catch(e => { console.log(e); });
-
-    $scope.buscarFunc = function () {
-      console.log("buscar ");
-      $scope.listResult = [];
-
-      $scope.curNuevoUnico = true;
-      let curNuevoAnterior = "";
-      let curNuevoContador = 0;
-      let buscarInput = $scope.buscarInput.toLowerCase();
-
-      angular.forEach($scope.list, function (value, key) {
-
-        let resultadoValido = false;
-        if ($scope.tipoCUR === tipoHistorico.value) {
-          if (value.rubrohistorico.toLowerCase().includes(buscarInput) ||
-            value["cur-historico"].toLowerCase().includes(buscarInput)) {
-                $scope.listResult.push(value);
-                resultadoValido = true;
-
-            }
-        } else {
-          if (value["cur-nuevo"].toLowerCase().includes(buscarInput) ||
-          value["rubro-viejo"].toLowerCase().includes(buscarInput)) {
-                $scope.listResult.push(value);
-                resultadoValido = true;
-            }
-        }
-
-        if(resultadoValido) {
-            if(curNuevoContador > 0 && curNuevoAnterior !== value["cur-nuevo"]){ $scope.curNuevoUnico = false; }
-            curNuevoAnterior = value["cur-nuevo"];
-            curNuevoContador++;
-        }
-      });
-
-      // debugger;
-
-      if ($scope.listResult.length > 0 && buscarInput !== '') {
-        $scope.hayResultados = true;
-        $scope.curNuevo = $scope.listResult[0];
-      } else {
-        $scope.hayResultados = false;
-        $scope.curNuevoUnico = false;
-      }
-
-    };
-
-  });
-</script>
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#999999" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="fb:pages" content="113686738612,171330806277312,1782115978736511" />
+<link rel="shortcut icon" href="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/files/favicon.png" type="image/png" />
+<meta name="description" content="Podrás realizar este trámite si tenés **licencia de conducir** vigente o vencida hace menos de un año, si la perdiste o te la robaron, o necesitás efectuar el cambio de jurisdicción. Si el vencimiento superó el año, deberás realizar un Otorgamiento.  Quienes circulan como principiantes deberán renovar después del vencimiento de la licencia, respetando los dos años en esa" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://buenosaires-dev.gcba.gob.ar/tramites/renovacion-de-licencia-de-conducir" />
+<link rel="shortlink" href="https://buenosaires-dev.gcba.gob.ar/node/102475" />
+<meta property="og:site_name" content="Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires" />
+<meta property="og:type" content="government" />
+<meta property="og:url" content="https://buenosaires-dev.gcba.gob.ar/tramites/renovacion-de-licencia-de-conducir" />
+<meta property="og:title" content="Buscador Nuevo CUR" />
+<meta property="og:description" content="Podrás realizar este trámite si tenés **licencia de conducir** vigente o vencida hace menos de un año, si la perdiste o te la robaron, o necesitás efectuar el cambio de jurisdicción. Si el vencimiento superó el año, deberás realizar un Otorgamiento.  Quienes circulan como principiantes deberán renovar después del vencimiento de la licencia, respetando los dos años en esa condición." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@gcba" />
+<meta name="twitter:creator" content="@gcba" />
+<meta name="twitter:url" content="https://buenosaires-dev.gcba.gob.ar/tramites/renovacion-de-licencia-de-conducir" />
+<meta name="twitter:title" content="Buscador Nuevo CUR" />
+<meta name="twitter:description" content="Podrás realizar este trámite si tenés **licencia de conducir** vigente o vencida hace menos de un año, si la perdiste o te la robaron, o necesitás efectuar el cambio de jurisdicción. Si el" />
+    <title>Buscador Nuevo CUR | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires</title>
+    <style>
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/system/system.base.css?px7rfa");
+</style>
 
 <style>
-  .resultados, .resultados .thumbnail{
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    opacity: 1;
-  }
-
-  .resultados.ng-hide, .thumbnail.ng-hide{
-    opacity: 0;
-  }
-
-  .alert{
-    margin: 0;
-  }
-
-  .thumbnail{
-    margin-top: 4%;
-  }
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/contextual/contextual.css?px7rfa");
 </style>
+<style>
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/date/date_api/date.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/date/date_popup/themes/datepicker.1.7.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/field/theme/field.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_consulta_actas/css/gcaba_consulta_actas.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_ddjj/css/gcaba_ddjj.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_expedientes/css/gcaba_localiza_expediente.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/libs/jqueryui/jquery-ui.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/libs/primitives/primitives.latest.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/css/Organigrama.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/css/organigramaTemplates.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/node/node.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/qui/qui.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/video_filter_mark/video_filter.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/views/css/views.css?px7rfa");
+</style>
+<style>
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/ctools/css/ctools.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_image_header/assets/css/gcaba_image_header.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_mas_simple/css/gcaba_mas_simple.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_re_simple/css/gcaba_re_simple.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_youtube_view/css/youtube_view.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/panels/css/panels.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_ratings/rate/rate.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/tagclouds/tagclouds.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/typogrify/typogrify.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/layouts/main/main.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/tramites/sedes-slider.min.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/field_collection/field_collection.theme.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/shortcut/shortcut.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/modules/toolbar/toolbar.css?px7rfa");
+</style>
+<style>
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/fonts/open-sans.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/fonts/material-icons-font.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/bastrap/vendor/bootstrap/bootstrap.min.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/bastrap/bastrap.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/global.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/buenosaires.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/fixes-v3.css?px7rfa");
+@import url("https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/tags_noticias/tags_noticias.css?px7rfa");
+</style>
+    <!-- HTML5 element support for IE6-8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script>window.jQuery || document.write("<script src='/sites/gcaba/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script> -->
+<script src="https://buenosaires-dev.gcba.gob.ar/misc/jquery.once.js?v=1.2"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/misc/drupal.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/modules/contextual/contextual.js?v=1.0"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/misc/form.js?v=7.59"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/contentanalysis/contentanalysis.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/contentoptimizer/contentoptimizer.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_banners/js/gcaba_banners.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_banners/plugins/BlockAdBlock-master/blockadblock.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/libs/jqueryui/jquery-ui.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/libs/primitives/primitives.min.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_organigrama/js/Organigrama.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/files/languages/es_X2Oe6avZ8CdUTMlSuualKwjnqbhZKTOgoMGatFyZ6_A.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/gcaba_image_header/assets/js/gcaba_image_header.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/insertFrame/insertFrame.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/modules/contributed/memcache/memcache_admin/memcache.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/js/tramites/sedes-slider.min.js?px7rfa"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.8/angular-sanitize.min.js"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/misc/autocomplete.js?v=7.59"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV3/bootstrap/js/misc/_collapse.js?v=7.59"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/modules/toolbar/toolbar.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/bastrap/vendor/bootstrap/bootstrap.min.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/js/buenosaires.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/js/jquery.browser.min.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/js/tags_noticias/tags_noticias.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/js/custom-autocomplete.js?px7rfa"></script>
+<script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV3/bootstrap/js/misc/autocomplete.js?px7rfa"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"xgcaba","theme_token":"aVjQUqdJK7DBDHixoCMQES4UmS-V8Y4L-349XBPgviY","js":{"sites\/gcaba\/themes\/gcbaV3\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.9.1\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"modules\/contextual\/contextual.js":1,"sites\/gcaba\/modules\/contributed\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"misc\/form.js":1,"sites\/gcaba\/modules\/contributed\/contentanalysis\/contentanalysis.js":1,"sites\/gcaba\/modules\/contributed\/contentoptimizer\/contentoptimizer.js":1,"sites\/gcaba\/modules\/gcaba_banners\/js\/gcaba_banners.js":1,"sites\/gcaba\/modules\/gcaba_banners\/plugins\/BlockAdBlock-master\/blockadblock.js":1,"sites\/gcaba\/modules\/gcaba_organigrama\/libs\/jqueryui\/jquery-ui.js":1,"sites\/gcaba\/modules\/gcaba_organigrama\/libs\/primitives\/primitives.min.js":1,"sites\/gcaba\/modules\/gcaba_organigrama\/js\/Organigrama.js":1,"public:\/\/languages\/es_X2Oe6avZ8CdUTMlSuualKwjnqbhZKTOgoMGatFyZ6_A.js":1,"sites\/gcaba\/modules\/gcaba_image_header\/assets\/js\/gcaba_image_header.js":1,"sites\/gcaba\/modules\/contributed\/insertFrame\/insertFrame.js":1,"sites\/gcaba\/modules\/contributed\/memcache\/memcache_admin\/memcache.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/js\/tramites\/sedes-slider.min.js":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.7.8\/angular.min.js":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular-sanitize\/1.7.8\/angular-sanitize.min.js":1,"misc\/autocomplete.js":1,"sites\/gcaba\/themes\/gcbaV3\/bootstrap\/js\/misc\/_collapse.js":1,"modules\/toolbar\/toolbar.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/bastrap\/vendor\/bootstrap\/bootstrap.min.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/js\/buenosaires.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/js\/jquery.browser.min.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/js\/tags_noticias\/tags_noticias.js":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/js\/custom-autocomplete.js":1,"sites\/gcaba\/themes\/gcbaV3\/bootstrap\/js\/misc\/autocomplete.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/contextual\/contextual.css":1,"sites\/gcaba\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/gcaba\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/gcaba\/modules\/gcaba_consulta_actas\/css\/gcaba_consulta_actas.css":1,"sites\/gcaba\/modules\/gcaba_ddjj\/css\/gcaba_ddjj.css":1,"sites\/gcaba\/modules\/gcaba_expedientes\/css\/gcaba_localiza_expediente.css":1,"sites\/gcaba\/modules\/gcaba_organigrama\/libs\/jqueryui\/jquery-ui.css":1,"sites\/gcaba\/modules\/gcaba_organigrama\/libs\/primitives\/primitives.latest.css":1,"sites\/gcaba\/modules\/gcaba_organigrama\/css\/Organigrama.css":1,"sites\/gcaba\/modules\/gcaba_organigrama\/css\/organigramaTemplates.css":1,"modules\/node\/node.css":1,"sites\/gcaba\/modules\/contributed\/qui\/qui.css":1,"sites\/gcaba\/modules\/contributed\/video_filter_mark\/video_filter.css":1,"sites\/gcaba\/modules\/contributed\/views\/css\/views.css":1,"sites\/gcaba\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/gcaba\/modules\/gcaba_image_header\/assets\/css\/gcaba_image_header.css":1,"sites\/gcaba\/modules\/gcaba_mas_simple\/css\/gcaba_mas_simple.css":1,"sites\/gcaba\/modules\/gcaba_re_simple\/css\/gcaba_re_simple.css":1,"sites\/gcaba\/modules\/gcaba_youtube_view\/css\/youtube_view.css":1,"sites\/gcaba\/modules\/contributed\/panels\/css\/panels.css":1,"sites\/gcaba\/modules\/gcaba_ratings\/rate\/rate.css":1,"sites\/gcaba\/modules\/contributed\/tagclouds\/tagclouds.css":1,"sites\/gcaba\/modules\/contributed\/typogrify\/typogrify.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/layouts\/main\/main.css":1,"sites\/gcaba\/modules\/contributed\/entity\/css\/views\/tarjetas.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/tramites\/sedes-slider.min.css":1,"sites\/gcaba\/modules\/contributed\/field_collection\/field_collection.theme.css":1,"modules\/shortcut\/shortcut.css":1,"modules\/toolbar\/toolbar.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/fonts\/open-sans.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/fonts\/material-icons-font.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/bastrap\/vendor\/bootstrap\/bootstrap.min.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/bastrap\/bastrap.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/global.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/buenosaires.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/fixes-v3.css":1,"sites\/gcaba\/themes\/gcbaV4\/xgcaba\/css\/tags_noticias\/tags_noticias.css":1,"public:\/\/css_injector\/css_injector_9.css":1}},"gcaba_banners":{"adBlockImageURI":"sites\/gcaba\/modules\/gcaba_banners\/img\/adblock-warning.png"},"urlIsAjaxTrusted":{"bweb":true},"og":{"og_context":{"gid":"104","etid":"11434","entity_type":"node","label":"Desarrollo Urbano y Transporte","state":"1","created":"1350669725","rdf_mapping":[]}},"tableHeaderOffset":"Drupal.toolbar.height","bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+
+
+
+<script src="./js/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.8/angular-sanitize.min.js"></script>
+
+
+
+
+    <!-- Codigo RSS -->
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/gcba" title="RSS feed Buenos Aires Ciudad">
+    <!-- end Codigo RSS -->
+      <script>
+            jQuery( document ).ready(function () {
+                var js = document.createElement("script");
+                js.type = "text/javascript";
+                js.async = 1;
+                js.src = "https://go.botmaker.com/rest/webchat/p/OX7TNDC421/init.js";
+                document.body.appendChild(js);
+            });
+        </script>  </head>
+  <body class="html not-front logged-in no-sidebars page-node page-node- page-node-102475 node-type-tramites-v2 group-context group-context-group-104 group-context-node group-context-node-11434 tramites-v2"  >
+
+    <!-- Google Tag Manager -->
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRB24B"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WRB24B');</script>
+    <!-- End Google Tag Manager -->
+
+    <noscript class="how-to">
+      <a class="js-alert alert-spot alert-spot-danger text-center" href="http://www.enable-javascript.com/es/" target="_blank">
+        Para utilizar las funcionalidades completas de este sitio es necesario tener
+        JavaScript habilitado. Aquí están las instrucciones para habilitar JavaScript en tu navegador web.
+      </a>
+    </noscript>
+    <a class="lt-ie9-alert alert-spot alert-spot-danger text-center" href="http://browsehappy.com/?locale=es" target="_blank">
+      Tu navegador no está actualizado. Tiene conocidas fallos de seguridad y podría no mostrar todas las características de este y otros sitios web.
+      Aprendé cómo podes actualizarlo.
+    </a>
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--page-top.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-page-top">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('toolbar') -->
+<!-- BEGIN OUTPUT from 'modules/toolbar/toolbar.tpl.php' -->
+
+<!-- END OUTPUT from 'modules/toolbar/toolbar.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('page') -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--node--102475.tpl.php
+   * page--node--%.tpl.php
+   * page--node.tpl.php
+   x page.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/page.tpl.php' -->
+
+<header class="navbar navbar-primary navbar-top">
+		<!-- Top header -->
+		<div class="navbar-accesible bg-navbar-accesible">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-accesible-id">
+							<span class="icon-menu"></span>
+							<span class="icon-close" style="display: none;"></span>
+						</button>
+					</div>
+					<nav id="navbar-accesible-id" class="collapse navbar-collapse" role="navigation">
+						<div class="container">
+							<!-- NAVBAR DE BUENOSAIRES -->
+								<ul class="nav navbar-nav navbar-right navbar-buenosaires secondary"><li class="first expanded" class="dropdown">
+			<a href="node/58540" class="dropdown-toggle" data-toggle="dropdown">Trámites
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="/consulta-de-infracciones">Consulta de Infracciones</a></li><li><a title="Solicitá tu turno" href="/tramites/turnos/vtv">Verificación Técnica Vehicular</a></li><li><a title="" href="/tramites">Ver todos los trámites</a></li><li><a title="Ciudad del Papa" href="/atencionygestionciudadana/que-turno-queres-sacar">Ver todos los turnos</a></li>
+			</ul></li>
+<li class="expanded" class="dropdown">
+			<a href="http://solicitudes.buenosaires.gob.ar/suaci/index" class="dropdown-toggle" data-toggle="dropdown">Solicitudes
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=154018">Veredas rotas</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1462821340520">Retiro de escombros</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1462822772075">Retiro de residuos voluminosos</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=167004">Reparación de luminaria</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1463604809212">Remoción de vehículo</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/index">Ver todas las solicitudes</a></li>
+			</ul></li>
+<li class="expanded" class="dropdown">
+			<a href="node/79649" class="dropdown-toggle" data-toggle="dropdown">Servicios de la Ciudad
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="http://disfrutemosba.buenosaires.gob.ar/">Disfrutemos BA</a></li><li><a title="" href="https://turismo.buenosaires.gob.ar/es">Turismo</a></li><li><a title="" href="https://trabajo.buenosaires.gob.ar/">Encontrá trabajo</a></li><li><a title="" href="/subte">Subte</a></li><li><a title="" href="/ecobici">Ecobici</a></li><li><a title="" href="/servicios">Ver todos los servicios</a></li>
+			</ul></li>
+<li class="last expanded" class="dropdown">
+			<a href="node/79280" class="dropdown-toggle" data-toggle="dropdown">Áreas de Gobierno
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="/jefedegobierno">Jefatura de Gobierno</a></li><li><a title="" href="/educacion-e-innovacion">Educación e Innovación</a></li><li><a title="" href="/salud">Salud</a></li><li><a title="" href="/desarrollo-urbano-y-transporte">Desarrollo Urbano y Transporte</a></li><li><a title="" href="/cultura">Cultura</a></li><li><a title="" href="/areasdegobierno">Ver todas las áreas</a></li>
+			</ul></li>
+</ul>							<!-- NAVBAR DE ACCESIBILIDAD -->
+								<ul class="nav navbar-nav navbar-accesible navbar-right primary"><li class="first leaf"><a href="http://www.buenosaires.gob.ar/transparencia" title="">Transparencia</a></li>
+<li class="leaf"><a href="https://disfrutemosba.buenosaires.gob.ar" title="">DisfrutemosBA</a></li>
+<li class="leaf"><a href="http://www.turismo.buenosaires.gob.ar/es" title="">Turismo</a></li>
+<li class="leaf"><a href="http://www.buenosaires.gob.ar/noticias" title="">Noticias</a></li>
+<li class="last leaf"><a href="https://miba.buenosaires.gob.ar" title="">Ingresar a miBA</a></li>
+</ul>						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- Bottom header -->
+		<div class="container">
+			<div class="row">
+
+				<!-- Navegación principal -->
+				<div class="col-md-12 col-sm-12 col-xs-12 text-right mainNavbar noPadding">
+					<nav id="navbar-principal-id" class="navbar">
+						<div class="row">
+
+							<div id="container-search-navbar-global" class="clearfix col-md-12">
+
+																			<!--  Lupa resposive -->
+										<div id="searchMainNavbar" class="hidden-lg hidden-md col-sm-2 col-xs-2 pull-right noPadding">
+											<button href="#" class="btn btn-primary noPaddingRight">
+												<span class="glyphicon glyphicon-search"></span>
+											</button>
+										</div>
+									
+									<!-- Logo de Buenos Aires y de Buenos Aires Ciudad -->
+									<div class="col-md-3 col-sm-5 col-xs-6 logoBABAC pull-left">
+										<a href="https://buenosaires-dev.gcba.gob.ar" >
+											<img src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/BA2016.png">
+										</a>
+									</div>
+								<!-- </div> -->
+
+								<div id="container-search-navbar" class="clearfix hidden-sm hidden-xs">
+
+																			<div id="search" class="col-md-1 pull-right">
+											<span class="glyphicon glyphicon-search search-buenosaires-trigger"></span>
+										</div>
+									
+									<!-- Navbar con items principales -->
+									<div id="navbar-principal" class="col-md-8 pull-right">
+										<ul class="nav navbar-nav navbar-right navbar-buenosaires secondary"><li class="first expanded" class="dropdown">
+			<a href="node/58540" class="dropdown-toggle" data-toggle="dropdown">Trámites
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="/consulta-de-infracciones">Consulta de Infracciones</a></li><li><a title="Solicitá tu turno" href="/tramites/turnos/vtv">Verificación Técnica Vehicular</a></li><li><a title="" href="/tramites">Ver todos los trámites</a></li><li><a title="Ciudad del Papa" href="/atencionygestionciudadana/que-turno-queres-sacar">Ver todos los turnos</a></li>
+			</ul></li>
+<li class="expanded" class="dropdown">
+			<a href="http://solicitudes.buenosaires.gob.ar/suaci/index" class="dropdown-toggle" data-toggle="dropdown">Solicitudes
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=154018">Veredas rotas</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1462821340520">Retiro de escombros</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1462822772075">Retiro de residuos voluminosos</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=167004">Reparación de luminaria</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/contactoPrestacion?codigoPrestacion=1463604809212">Remoción de vehículo</a></li><li><a title="" href="http://solicitudes.buenosaires.gob.ar/suaci/index">Ver todas las solicitudes</a></li>
+			</ul></li>
+<li class="expanded" class="dropdown">
+			<a href="node/79649" class="dropdown-toggle" data-toggle="dropdown">Servicios de la Ciudad
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="http://disfrutemosba.buenosaires.gob.ar/">Disfrutemos BA</a></li><li><a title="" href="https://turismo.buenosaires.gob.ar/es">Turismo</a></li><li><a title="" href="https://trabajo.buenosaires.gob.ar/">Encontrá trabajo</a></li><li><a title="" href="/subte">Subte</a></li><li><a title="" href="/ecobici">Ecobici</a></li><li><a title="" href="/servicios">Ver todos los servicios</a></li>
+			</ul></li>
+<li class="last expanded" class="dropdown">
+			<a href="node/79280" class="dropdown-toggle" data-toggle="dropdown">Áreas de Gobierno
+				<div class="underline hidden-xs"></div>
+			</a>
+			<ul class="dropdown-menu main-menu">
+				<li><a title="" href="/jefedegobierno">Jefatura de Gobierno</a></li><li><a title="" href="/educacion-e-innovacion">Educación e Innovación</a></li><li><a title="" href="/salud">Salud</a></li><li><a title="" href="/desarrollo-urbano-y-transporte">Desarrollo Urbano y Transporte</a></li><li><a title="" href="/cultura">Cultura</a></li><li><a title="" href="/areasdegobierno">Ver todas las áreas</a></li>
+			</ul></li>
+</ul>									</div>
+
+								</div>
+
+								<!-- Buscador -->
+								<div class="col-md-9 col-sm-12 col-xs-12 inputSearch" role="search" style="display: none;">
+									<div class="row">
+										<form action="bweb" method="post" id="bweb-block-form" accept-charset="UTF-8"><div><div class="form-item form-item-keys form-type-textfield form-autocomplete form-group"><div class="input-group"><input class="form-control input-lg form-control form-text" placeholder="¿Qué estás buscando?.." type="text" id="edit-keys" name="keys" value="" size="100" maxlength="128" /><input class="autocomplete" disabled="disabled" id="edit-keys-autocomplete" type="hidden" value="https://buenosaires-dev.gcba.gob.ar/index.php?q=ajax/bweb-autocomplete" />
+<span class="input-group-addon"><span class="icon glyphicon glyphicon-refresh" aria-hidden="true"></span>
+</span></div></div><button class="btnCloseBWEB btn btn-default form-submit" style="" onclick="close_bweb_header(event)" type="submit" id="edit-btnclosebweb" name="op" value="&lt;span class=&quot;material-icons&quot;&gt;close&lt;span&gt;"><span class="material-icons">close<span></button>
+<input type="hidden" name="facet_type" value="" />
+<input type="hidden" name="form_build_id" value="form-bGTumhcZ-DiKRb6PcIV1xJYqQaxJVFWC9NRhVsaimSc" />
+<input type="hidden" name="form_token" value="Y-AIuLjIdJTwmTuyARqez-3LfTY-AR0bxA4aVU0j8OA" />
+<input type="hidden" name="form_id" value="bweb_block_form" />
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('bootstrap_panel') -->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV3/bootstrap/templates/bootstrap/bootstrap-panel.tpl.php' -->
+<fieldset  class="captcha-admin-links collapsible panel panel-default form-wrapper" id="edit-captcha--2">
+          <legend class="panel-heading">
+      <a href="#edit-captcha-2-body" class="panel-title fieldset-legend collapsed" data-toggle="collapse">CAPTCHA: no challenge enabled</a>
+    </legend>
+        <div class="panel-body panel-collapse collapse fade collapsed" id="edit-captcha-2-body">
+        <a href="/admin/config/people/captcha/captcha/captcha_point/bweb_block_form?destination=node/102475">Place a CAPTCHA here for untrusted users.</a>  </div>
+</fieldset>
+
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV3/bootstrap/templates/bootstrap/bootstrap-panel.tpl.php' -->
+
+<div class="form-actions form-wrapper form-group" id="edit-actions"><button id="bweb-submit-btn" style="display:none;" type="submit" name="op" value="" class="btn form-submit"></button>
+</div></div></form>									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <!-- /#page-header -->
+  
+  <div class="clearfix">
+
+          <section>
+        <div id="page-messages" class="container" >
+          <div class="">
+            <div class="panel-panel panel-bastrap-12">
+                            <a id="main-content"></a>
+                                          <div class="breadcrumb"><a href="/">Buenos Aires</a><a href="/desarrollo-urbano-y-transporte">Desarrollo Urbano y Transporte</a><a href="/tramites">Trámites</a><a href="#">Renovación de Licencia de Conducir</a></div>                                            <h2 class="element-invisible">Solapas principales</h2><ul class="tabs--primary nav nav-tabs"><li class="active"><a href="/tramites/renovacion-de-licencia-de-conducir" class="active">Ver<span class="element-invisible">(solapa activa)</span></a></li>
+<li><a href="/node/102475/edit">Editar</a></li>
+<li><a href="/node/102475/backlinks">What links here</a></li>
+<li><a href="/node/102475/outline">Índice</a></li>
+<li><a href="/node/102475/node_export">Node export</a></li>
+<li><a href="/node/102475/unpublish/bUcPT6TVrx2hQ1RHgZz7s8jUrKXVGiT1tes-xODElmU">Unpublish</a></li>
+<li><a href="/node/102475/kwresearch">Palabras clave</a></li>
+<li><a href="/node/102475/devel">Devel</a></li>
+</ul>                                                      </div>
+          </div>
+        </div>
+        <!-- Inicio Contenido -->
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--no-wrapper.tpl.php
+   * region--content.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-content">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--no-wrapper.tpl.php
+   * block--system--main.tpl.php
+   * block--system.tpl.php
+   * block--content.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV3/bootstrap/templates/block/block.tpl.php' -->
+<section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="contextual-links-region">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('main') -->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/layouts/main/main.tpl.php' -->
+<div class="panel-display clearfix panel-layout-main">
+<!-- Full width content -->
+	<div class="panel-panel panel-panel-full-width">
+		<div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--custom.tpl.php
+   * panels-pane--custom--5.tpl.php
+   * panels-pane--custom.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--custom.tpl.php
+   * panels-pane--custom--6.tpl.php
+   * panels-pane--custom.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+</div>
+	</div>
+	<div class="container">
+		<!-- Top content -->
+		<div class="panel-panel clearfix">
+			<div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--custom.tpl.php
+   * panels-pane--custom--7.tpl.php
+   * panels-pane--custom.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+<div class="panel-pane pane-custom pane-7 mt-2 mb-4" id="buscadorCUR" >
+  
+      
+  
+  <div class="pane-content">
+
+
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <div class="container apra">
+
+          <!-- BUSCADOR -->
+            <div class="row  mt-3">
+
+                <!-- INPUT RADIOS -->
+                <h3>¿Qué código necesitás consultar?</h3>
+                <div class="form-group col-md-3">
+                  <input type="radio" ng-model="tipoCUR" id="cur-nuevo" ng-value="tipoNuevo.value" ng-click="limpiarResultados()">
+                  <label class="control-label" for="cur-nuevo"> {{tipoNuevo.name}} </label>
+                </div>
+                <div class="form-group col-md-3">
+                  <input type="radio" ng-model="tipoCUR" id="cur-viejo" ng-value="tipoHistorico.value" ng-click="limpiarResultados()">
+                  <label class="control-label" for="cur-viejo"> {{tipoHistorico.name}} </label>
+                </div>
+                
+                <!-- INPUT AUTOCOMPLETE -->
+                <div class="form-group col-md-12">
+                    <h3>Ingresa el código o descripción</h3>
+
+                    <input ng-model="inputCUR" type="text" class="form-control" id="buscar" ng-change="buscarCUR(inputCUR)" disabled="disabled" placeholder="Código o Descripcion" value="inputCUR">
+                    
+                    <!-- RUBRO HISTORICO -->
+                    <ul class="list-group" ng-show="tipoCUR === tipoHistorico.value && !hideInfo">
+                      <li class="list-group-item" ng-repeat="data in listResultHistorico" ng-click="getCURAsociado(data)" > 
+                        <span>{{ data['cur-historico'] }}</span>
+
+                        <!-- Aplicamos el elipsis cuando supera la cantidad de caracteres especificados -->
+                        <span class="rubro-his" ng-class="{ etcetera: data['rubro-historico'].length > 53 }">{{ data['rubro-historico'] }}</span>
+                      </li>
+                    </ul>
+                    
+                    <!-- NUEVO CODIGO -->
+                    <ul class="list-group" ng-show="tipoCUR === tipoNuevo.value && !hideInfo">
+                      <li class="list-group-item" ng-repeat="data in listResultNuevo" ng-click="getCURAsociado(data)" > 
+                        <span>{{ data['cur-nuevo'] }}</span>
+
+                        <!-- Aplicamos el elipsis cuando supera la cantidad de caracteres especificados -->
+                        <span class="rubro-his" ng-class="{ etcetera: data['rubro-viejo'].length > 53 }">{{ data['rubro-viejo'] }}</span>
+                      </li>
+                    </ul>
+    
+                    <!-- <button class="btn" ng-click="buscarCUR()">
+                        <span class="lupa glyphicon glyphicon-search"></span>
+                    </button> -->
+                </div>
+
+
+            </div>
+    
+            <div ng-show="hayResultados" class="resultados">
+              <div class="thumbnail">
+                  <h3 class="alert alert-info"> Nuevo código urbanístico </h3>
+                  <div class="caption">
+                      <h3>{{curSelected["cur-nuevo"]}} / {{curSelected["rubro-viejo"]}}</h3>
+                  </div>
+              </div>
+    
+              <div class="mt-4 table-responsive">
+                  <table class="table table-striped">
+                      <thead>
+                          <tr class="bg-primary">
+                              <th class="text-center" scope="col"><strong>Código</strong></th>
+                              <th class="text-center" scope="col"><strong>Rubro</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="rubroAsociado in listByNuevoCUR">
+                              <th scope="row"><strong>{{rubroAsociado["cur-historico"]}}</strong></th>
+                              <td>{{rubroAsociado["rubro-historico"]}}</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+  
+  </div>
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node-title.tpl.php
+   * panels-pane--node-title--node-title.tpl.php
+   * panels-pane--node-title.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:body.tpl.php
+   * panels-pane--entity-field--node-body.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node-updated.tpl.php
+   * panels-pane--node-updated--node-updated.tpl.php
+   * panels-pane--node-updated.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+</div>
+		</div>
+		<!-- Main content -->
+		
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-requisitos.tpl.php
+   * panels-pane--entity-field--node-field-requisitos.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-pasos.tpl.php
+   * panels-pane--entity-field--node-field-pasos.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-costos-v2.tpl.php
+   * panels-pane--entity-field--node-field-costos-v2.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-costo.tpl.php
+   * panels-pane--entity-field--node-field-costo.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-masinfo.tpl.php
+   * panels-pane--entity-field--node-field-masinfo.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-sedes.tpl.php
+   * panels-pane--entity-field--node-field-sedes.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--node:field-organismo-responsable-fc.tpl.php
+   * panels-pane--entity-field--node-field-organismo-responsable-fc.tpl.php
+   * panels-pane--entity-field.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<div class="panel-separator"></div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--custom.tpl.php
+   * panels-pane--custom--2.tpl.php
+   * panels-pane--custom.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+		<!-- Bottom content -->
+		<div class="panel-panel clearfix">
+			<div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('panels_pane') -->
+<!-- FILE NAME SUGGESTIONS:
+   * panels-pane--custom.tpl.php
+   * panels-pane--custom--3.tpl.php
+   * panels-pane--custom.tpl.php
+   x panels-pane.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/gcaba/modules/contributed/panels/templates/panels-pane.tpl.php' -->
+
+</div>
+		</div>
+	</div>
+</div>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/layouts/main/main.tpl.php' -->
+
+<div class="contextual-links-wrapper"><ul class="contextual-links"><li class="0 first last"><a href="/admin/structure/pages/nojs/operation/node_view/handlers/node_view__panel_context_b0efaf32-27ce-455e-9768-97855b19dd6f/content?destination=node/102475">Edit Panel</a></li>
+</ul></div></div>
+</section>
+
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV3/bootstrap/templates/block/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+        <!-- Fin Contenido -->
+      </section>
+
+        </div>
+
+<footer>
+	<div class="more-options-footer footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-xs-12 titleMoreOptions">
+					<p>MÁS BUSCADOS</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<ul>
+						
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-first.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-footer-first">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu--menu-servicios-web.tpl.php
+   * block--menu.tpl.php
+   * block--footer-first.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_first.tpl.php' -->
+<h4></h4><ul><li class="first leaf"><a href="http://buenosaires.gob.ar/tramites" title="">Trámites</a></li>
+<li class="leaf"><a href="http://buenosaires.gob.ar/turnos" title="Sistema unico de atencion ciudadana">Turnos</a></li>
+<li class="leaf"><a href="http://solicitudes.buenosaires.gob.ar/suaci/index" title="">Solicitudes</a></li>
+<li class="last leaf"><a href="http://buenosaires.gob.ar/aplicacionesmoviles" title="">Aplicaciones móviles</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_first.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<ul>
+						
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-second.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-footer-second">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu--menu--reas-de-gobierno.tpl.php
+   * block--menu.tpl.php
+   * block--footer-second.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_second.tpl.php' -->
+<h4></h4><ul><li class="first leaf"><a href="http://www.buenosaires.gob.ar/servicios" title="">Servicios de la Ciudad</a></li>
+<li class="leaf"><a href="http://www.buenosaires.gob.ar/areasdegobierno" title="">Áreas de Gobierno</a></li>
+<li class="leaf"><a href="http://boletinoficial.buenosaires.gob.ar/" title="">Boletín oficial</a></li>
+<li class="last leaf"><a href="http://www.buenosaires.gob.ar/transparencia" title="">Transparencia</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_second.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<ul>
+						
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-third.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-footer-third">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu--menu-informaci-n-p-blica.tpl.php
+   * block--menu.tpl.php
+   * block--footer-third.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_third.tpl.php' -->
+<h4></h4><ul><li class="first leaf"><a href="http://mapa.buenosaires.gob.ar" title="">Mapa interactivo</a></li>
+<li class="leaf"><a href="http://www.buenosaires.gob.ar/laciudad/telefonosutiles" title="">Teléfonos útiles</a></li>
+<li class="last leaf"><a href="http://www.buenosaires.gob.ar/danostuopinion" title="">Danos tu opinión</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_third.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer footer-buenosaires">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 col-xs-12 logoVBA">
+						<a class="navbar-brand bavos-footer" href="http://www.buenosaires.gob.ar" target="_blank"></a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 acercaSitio">
+						<p>ACERCA DE ESTE SITIO</p>
+						<ul>
+							
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-four.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'modules/system/region.tpl.php' -->
+  <div class="region region-footer-four">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--23.tpl.php
+   * block--block.tpl.php
+   * block--footer-four.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_four.tpl.php' -->
+<h4></h4><script>
+jQuery('.social-shares').remove();
+</script>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_four.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu--menu-acerca-de-este-sitio.tpl.php
+   * block--menu.tpl.php
+   * block--footer-four.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_four.tpl.php' -->
+<h4></h4><ul><li class="first leaf"><a href="/innovacion/ciudadinteligente/terminos-y-condiciones" title="">Términos y condiciones</a></li>
+<li class="leaf"><a href="/privacidad" title="">Política de privacidad</a></li>
+<li class="leaf"><a href="/innovacion/ciudadinteligente/gestiondigital/webs-y-apps" title="">Sobre esta web</a></li>
+<li class="last leaf"><a href="http://buenosaires.gob.ar/mapadesitio" title="">Mapa de sitio</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/block--footer_four.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'modules/system/region.tpl.php' -->
+
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 telefonosUtiles">
+						<p>TELÉFONOS DE EMERGENCIA</p>
+						<ul>
+							<li>
+								<a class="hidden-xs hidden-sm">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>103 | Emergencias</div>
+								</a>
+								<a class="hidden-md hidden-lg" href="tel:103">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>103 | Emergencias</div>
+								</a>
+							</li>
+							<li>
+								<a class="hidden-xs hidden-sm">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>107 | SAME</div>
+								</a>
+								<a class="hidden-md hidden-lg" href="tel:107">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>107 | SAME</div>
+								</a>
+							</li>
+							<li>
+								<a class="hidden-xs hidden-sm">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>108 | Línea Social</div>
+								</a>
+								<a class="hidden-md hidden-lg" href="tel:108">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>108 | Línea Social</div>
+								</a>
+							</li>
+							<li>
+								<a class="hidden-xs hidden-sm">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>147 | Atención Ciudadana</div>
+								</a>
+								<a class="hidden-md hidden-lg" href="tel:147">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>147 | Atención Ciudadana</div>
+								</a>
+							</li>
+							<li>
+								<a class="hidden-xs hidden-sm">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>144 | Violencia de Género</div>
+								</a>
+								<a class="hidden-md hidden-lg" href="tel:144">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<div>144 | Violencia de Género</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-12 col-xs-12">
+						<p class="hidden-xs hidden-sm">CONTACTO</p>
+l
+						<hr class="hidden-lg hidden-md" />
+
+						<ul class="social">
+							<li><a class="social-fb" href="http://www.facebook.com/gcba" target="_blank">Facebook</a></li>
+							<li><a class="social-tw" href="http://www.twitter.com/gcba" target="_blank">Twitter</a></li>
+							<li><a class="social-yt" href="http://www.youtube.com/user/GCBA" target="_blank">Youtube</a></li>
+							<li><a class="social-in" href="https://www.instagram.com/buenosaires/" target="_blank">Instagram</a></li>
+							<li><a class="social-rss" href="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/files/feed-desarrollo-urbano-y-transporte.xml" target="_blank">RSS</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 legal">
+						<hr />
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12 legalText pull-right">
+								<p>
+									Los contenidos de Gobierno de la Ciudad Autónoma de Buenos Aires están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina License
+								</p>
+							</div>
+							<div class="logoOficialCiudad col-md-6 col-sm-6 col-xs-12 pull-left">
+								<span>
+									<a class="navbar-brand bac-footer" href="http://www.buenosaires.gob.ar" target="_blank">Buenos Aires Ciudad</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>
+
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/page.tpl.php' -->
+
+    <script src="https://buenosaires-dev.gcba.gob.ar/sites/gcaba/themes/gcbaV3/bootstrap/js/bootstrap.js?px7rfa"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      // var app = angular.module('myApp', ['ngAnimate']);
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function ($scope, $http) {
+          $scope.hayResultados = false;
+          // $scope.listResult = [];
+          $scope.tipoCURoptions = [];
+          $scope.curNuevo = {};
+          $scope.tipoNuevo = {};
+          $scope.tipoNuevo.name = "Nuevo código urbanístico";
+          $scope.tipoNuevo.value = "cur-nuevo";
+          $scope.tipoHistorico = {};
+          $scope.tipoHistorico.name = "Código urbanístico histórico";
+          $scope.tipoHistorico.value = "rubro-historico";
+          $scope.tipoCURoptions = [$scope.tipoNuevo, $scope.tipoHistorico];
+          $scope.tipoCUR = $scope.tipoHistorico.value;
+          $scope.inputCUR = '';
+      
+          // const apiURL = "https://bypasscors.herokuapp.com/api/?url="+encodeURIComponent('http://cdn2.buenosaires.gob.ar/desarrollo/buenos-aires/apra/codigo-urbanistico.json');
+        //   const apiURL = 'https://cdn2.buenosaires.gob.ar/desarrollo/buenos-aires/apra/codigo-urbanistico.json';
+          const apiURL = 'apra.json';
+      
+          $http.get(apiURL).then(function (response) {
+              document.getElementById('buscar').removeAttribute('disabled');
+
+              focus();
+      
+              $scope.list = response.data;
+              
+              angular.forEach($scope.list, function (value, key) {
+                value.rubrohistorico = value["rubro-historico"]
+              });
+            }).catch(e => { console.log(e); });
+      
+
+
+
+            // BUSQUEDA DE CUR
+            $scope.buscarCUR = function (inputCUR) {
+              $scope.listResultHistorico  = [];
+              $scope.listResultNuevo      = [];
+              $scope.hideInfo      = false;
+              $scope.hayResultados = false;
+
+              inputCUR = inputCUR.toLowerCase();
+        
+              angular.forEach($scope.list, function (value, key) {
+                
+                if ($scope.tipoCUR === $scope.tipoHistorico.value) {
+                  if (value.rubrohistorico.toLowerCase().includes(inputCUR) ||
+                    value["cur-historico"].toLowerCase().includes(inputCUR)) {
+                      $scope.listResultHistorico.push(value);
+                    }
+                } else {
+                  if (value["cur-nuevo"].toLowerCase().includes(inputCUR) ||
+                  value["rubro-viejo"].toLowerCase().includes(inputCUR)) {
+
+                    if( !$scope.listResultNuevo.find(res => res['cur-nuevo'] === value['cur-nuevo']) ){
+                      $scope.listResultNuevo.push(value);
+                    }
+                  }
+                }
+              });
+            };
+
+
+            // SELECCION DE CUR ESPECIFICO LUEGO DEL AUTOCOMPLETE
+            $scope.getCURAsociado = function(data){
+              $scope.hayResultados = true; // Mostramos los datos del CUR seleccionado
+              $scope.hideInfo      = true; // Ocultamos el listado del autocomplete
+              
+              console.log(data);
+              
+              // DATOS DEL CUR HISTORICO
+              $scope.curSelected   = data;
+
+              // FILTRADO DE HISTORICOS POR NUEVO CUR
+              $scope.listByNuevoCUR = $scope.list.filter( res => res['cur-nuevo'] === data['cur-nuevo']);
+            }
+
+            $scope.limpiarResultados = () => {
+              $scope.listResultHistorico  = [];
+              $scope.listResultNuevo      = [];
+              $scope.hayResultados        = false;
+              $scope.inputCUR             = '';
+            };
+
+
+
+
+
+
+
+      
+          // $scope.buscarCUR = function () {
+          //   console.log("buscar ");
+          //   $scope.listResult = [];
+      
+          //   $scope.curNuevoUnico = true;
+          //   let curNuevoAnterior = "";
+          //   let curNuevoContador = 0;
+          //   let inputCUR = $scope.inputCUR.toLowerCase();
+      
+          //   angular.forEach($scope.list, function (value, key) {
+      
+          //     let resultadoValido = false;
+          //     if ($scope.tipoCUR === tipoHistorico.value) {
+          //       if (value.rubrohistorico.toLowerCase().includes(inputCUR) ||
+          //         value["cur-historico"].toLowerCase().includes(inputCUR)) {
+          //             $scope.listResult.push(value);
+          //             resultadoValido = true;
+      
+          //         }
+          //     } else {
+          //       if (value["cur-nuevo"].toLowerCase().includes(inputCUR) ||
+          //       value["rubro-viejo"].toLowerCase().includes(inputCUR)) {
+          //             $scope.listResult.push(value);
+          //             resultadoValido = true;
+          //         }
+          //     }
+      
+          //     if(resultadoValido) {
+          //         if(curNuevoContador > 0 && curNuevoAnterior !== value["cur-nuevo"]){ $scope.curNuevoUnico = false; }
+          //         curNuevoAnterior = value["cur-nuevo"];
+          //         curNuevoContador++;
+          //     }
+          //   });
+      
+          //   // debugger;
+      
+          //   if ($scope.listResult.length > 0 && inputCUR !== '') {
+          //     $scope.hayResultados = true;
+          //     $scope.curNuevo = $scope.listResult[0];
+          //   } else {
+          //     $scope.hayResultados = false;
+          //     $scope.curNuevoUnico = false;
+          //   }
+      
+          // };
+      
+        });
+    </script>
+      
+    <style>
+      .resultados, .resultados .thumbnail{
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        opacity: 1;
+      }
+    
+      .resultados.ng-hide, .thumbnail.ng-hide{
+        opacity: 0;
+      }
+    
+      .alert{
+        margin: 0;
+      }
+    
+      .thumbnail{
+        margin-top: 4%;
+      }
+
+
+      #buscadorCUR .list-group li::before{
+        color: unset !important;
+        content: unset !important;
+      }
+
+      #buscadorCUR .list-group li{
+        margin-top: 0;
+      }
+
+      #buscadorCUR .list-group li span.rubro-his{
+        margin-left: 1em;
+      }
+
+      #buscadorCUR .list-group{
+        margin-top: 0;
+        padding-left: 0;
+      }
+
+      #buscadorCUR .list-group-item{
+        padding: 5px 20px;
+      }
+
+      @media only screen and (min-width: 700px) {
+        /* #buscadorCUR .list-group li span.etcetera{ */
+        #buscadorCUR .list-group li{
+          display:inline-block;
+          width: 100%;
+          white-space: nowrap;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          position: relative;
+          top: 5px;
+          cursor: pointer;
+        }
+
+        /* #buscadorCUR .list-group li span.etcetera:hover{ */
+        #buscadorCUR .list-group li:hover{
+            /* display: unset; */
+            white-space: unset;
+            position: unset;
+            background-color: #d6d6d6;
+        }
+      }
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
+<!-- END OUTPUT from 'sites/gcaba/themes/gcbaV4/xgcaba/templates/html.tpl.php' -->
+
