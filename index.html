@@ -542,7 +542,7 @@
                           </tr>
                       </thead>
                       <tbody>
-                          <tr ng-repeat="rubroAsociado in listByNuevoCUR">
+                          <tr ng-repeat="rubroAsociado in listByCUR">
                               <th scope="row"><strong>{{rubroAsociado["cur-historico"]}}</strong></th>
                               <td>{{rubroAsociado["rubro-historico"]}}</td>
                           </tr>
@@ -1128,8 +1128,15 @@ l
               // DATOS DEL CUR HISTORICO
               $scope.curSelected   = data;
 
-              // FILTRADO DE HISTORICOS POR NUEVO CUR
-              $scope.listByNuevoCUR = $scope.list.filter( res => res['cur-nuevo'] === data['cur-nuevo']);
+              if( $scope.tipoCUR === $scope.tipoNuevo.value ){
+                // FILTRADO DE HISTORICOS POR NUEVO CUR
+                $scope.listByCUR = $scope.list.filter( res => res['cur-nuevo'] === data['cur-nuevo']);
+              }
+              else{
+                // FILTRADO DE HISTORICOS POR VIEJO CUR
+                $scope.listByCUR = [];
+                $scope.listByCUR[0] = $scope.curSelected;
+              }
             }
 
             $scope.limpiarResultados = () => {
