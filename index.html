@@ -478,17 +478,17 @@
         <div class="container apra">
 
           <!-- BUSCADOR -->
-            <div class="row  mt-3">
+            <div class="row">
 
                 <!-- INPUT RADIOS -->
                 <h3>¿Qué código necesitás consultar?</h3>
-                <div class="form-group col-md-3">
-                  <input type="radio" ng-model="tipoCUR" id="cur-nuevo" ng-value="tipoNuevo.value" ng-click="limpiarResultados()">
-                  <label class="control-label" for="cur-nuevo"> {{tipoNuevo.name}} </label>
-                </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-3 radios">
                   <input type="radio" ng-model="tipoCUR" id="cur-viejo" ng-value="tipoHistorico.value" ng-click="limpiarResultados()">
                   <label class="control-label" for="cur-viejo"> {{tipoHistorico.name}} </label>
+                </div>
+                <div class="form-group col-md-3 radios">
+                  <input type="radio" ng-model="tipoCUR" id="cur-nuevo" ng-value="tipoNuevo.value" ng-click="limpiarResultados()">
+                  <label class="control-label" for="cur-nuevo"> {{tipoNuevo.name}} </label>
                 </div>
                 
                 <!-- INPUT AUTOCOMPLETE -->
@@ -500,7 +500,7 @@
                     <!-- RUBRO HISTORICO -->
                     <ul class="list-group" ng-show="tipoCUR === tipoHistorico.value && !hideInfo">
                       <li class="list-group-item" ng-repeat="data in listResultHistorico" ng-click="getCURAsociado(data)" > 
-                        <span>{{ data['cur-historico'] }}</span>
+                        <span class="codigo">{{ data['cur-historico'] }}</span>
 
                         <!-- Aplicamos el elipsis cuando supera la cantidad de caracteres especificados -->
                         <span class="rubro-his" ng-class="{ etcetera: data['rubro-historico'].length > 53 }">{{ data['rubro-historico'] }}</span>
@@ -510,7 +510,7 @@
                     <!-- NUEVO CODIGO -->
                     <ul class="list-group" ng-show="tipoCUR === tipoNuevo.value && !hideInfo">
                       <li class="list-group-item" ng-repeat="data in listResultNuevo" ng-click="getCURAsociado(data)" > 
-                        <span>{{ data['cur-nuevo'] }}</span>
+                        <span class="codigo">{{ data['cur-nuevo'] }}</span>
 
                         <!-- Aplicamos el elipsis cuando supera la cantidad de caracteres especificados -->
                         <span class="rubro-his" ng-class="{ etcetera: data['rubro-viejo'].length > 53 }">{{ data['rubro-viejo'] }}</span>
@@ -525,30 +525,33 @@
 
             </div>
     
-            <div ng-show="hayResultados" class="resultados">
-              <div class="thumbnail">
-                  <h3 class="alert alert-info"> Nuevo código urbanístico </h3>
-                  <div class="caption">
-                      <h3>{{curSelected["cur-nuevo"]}} / {{curSelected["rubro-viejo"]}}</h3>
-                  </div>
-              </div>
+            <div ng-show="hayResultados" class="resultados mt-2">
+              <!-- <div class="thumbnail"> -->
+                <div class="principal">
+                    <h3 class=""> Nuevo código urbanístico </h3>
+                    <h3><strong class="nuevo-cod">{{curSelected["cur-nuevo"]}}</strong> <span>{{curSelected["rubro-viejo"]}}</span></h3>
+                </div>
+                
+                <div class="detalle table-responsive">
+                    <table class="table">
+                        <thead>
+                            <h4><strong>{{ tipoCUR === tipoHistorico.value ? 'Código urbanístico histórico correspondiente:' : 'Códigos urbanísticos históricos que agrupa:' }}</strong></h4>
+                            <tr>
+                                <th scope="col"><strong>Código</strong></th>
+                                <th class="rubro" scope="col"><strong>Rubro</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="rubroAsociado in listByCUR">
+                                <th scope="row"><strong>{{rubroAsociado["cur-historico"]}}</strong></th>
+                                <!-- <td ng-class="{ etcetera-mobile: rubroAsociado['rubro-historico'].length > 25 }">{{rubroAsociado["rubro-historico"]}}</td> -->
+                                <td class="etcetera">{{rubroAsociado["rubro-historico"]}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              <!-- </div>c -->
     
-              <div class="mt-4 table-responsive">
-                  <table class="table table-striped">
-                      <thead>
-                          <tr class="bg-primary">
-                              <th class="text-center" scope="col"><strong>Código</strong></th>
-                              <th class="text-center" scope="col"><strong>Rubro</strong></th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr ng-repeat="rubroAsociado in listByCUR">
-                              <th scope="row"><strong>{{rubroAsociado["cur-historico"]}}</strong></th>
-                              <td>{{rubroAsociado["rubro-historico"]}}</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
 
             </div>
             
@@ -1077,7 +1080,7 @@ l
           $http.get(apiURL).then(function (response) {
               document.getElementById('buscar').removeAttribute('disabled');
 
-              focus();
+              $("#buscar").focus();
       
               $scope.list = response.data;
               
@@ -1123,8 +1126,6 @@ l
               $scope.hayResultados = true; // Mostramos los datos del CUR seleccionado
               $scope.hideInfo      = true; // Ocultamos el listado del autocomplete
               
-              console.log(data);
-              
               // DATOS DEL CUR HISTORICO
               $scope.curSelected   = data;
 
@@ -1144,6 +1145,7 @@ l
               $scope.listResultNuevo      = [];
               $scope.hayResultados        = false;
               $scope.inputCUR             = '';
+              $("#buscar").focus();
             };
 
 
@@ -1246,7 +1248,75 @@ l
 
       @media only screen and (min-width: 700px) {
         /* #buscadorCUR .list-group li span.etcetera{ */
-        #buscadorCUR .list-group li{
+          #buscadorCUR .list-group li{
+            display:inline-block;
+            width: 100%;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            position: relative;
+            top: 5px;
+            cursor: pointer;
+          }
+          
+          /* #buscadorCUR .list-group li span.etcetera:hover{ */
+            #buscadorCUR .list-group li:hover{
+              /* display: unset; */
+              white-space: unset;
+              position: unset;
+              background-color: #d6d6d6;
+            }
+          }
+      
+      #buscadorCUR .codigo{ font-weight: bold; }
+      #buscadorCUR .radios >*{
+        cursor: pointer;
+      }
+
+      #buscadorCUR .resultados{
+        box-shadow: 0px 0px 10px 0px #b1b1b1;
+        border-radius: 10px;
+      }
+      
+      #buscadorCUR .resultados .principal strong.nuevo-cod{
+        font-size: 2.3rem;
+      }
+
+      #buscadorCUR .resultados .principal span{
+        margin-left: 2rem;
+        font-weight: normal;
+      }
+
+      #buscadorCUR .resultados .principal{
+        background-color: #34485e;
+        color: white;
+        padding: 1px 25px 10px 25px;
+        border-radius: 10px 10px 0 0;
+      }
+      
+      #buscadorCUR .resultados .detalle{
+        padding: 2em 25px;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      #buscadorCUR .resultados .detalle h4{
+        margin-bottom: 1em !important;
+        font-size: 2rem;
+      }
+      
+      #buscadorCUR .resultados .detalle tbody td, #buscadorCUR .resultados .detalle .rubro{
+        padding-left: 20px;
+      }
+
+
+      @media only screen and (max-width: 767px) {
+        .table-responsive{
+          border: 0;
+        }
+
+        /* #buscadorCUR table td.etcetera{
           display:inline-block;
           width: 100%;
           white-space: nowrap;
@@ -1255,15 +1325,8 @@ l
           position: relative;
           top: 5px;
           cursor: pointer;
-        }
-
-        /* #buscadorCUR .list-group li span.etcetera:hover{ */
-        #buscadorCUR .list-group li:hover{
-            /* display: unset; */
-            white-space: unset;
-            position: unset;
-            background-color: #d6d6d6;
-        }
+          border: 2px solid;
+        } */
       }
 
     </style>
